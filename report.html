@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .header {
+  padding: 10px;
+  text-align: center;
+  background: #0cc;
+  color: white;
+  font-size: 30px;
+  margin-top: -1%;
+}
+.form-style-3{
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color:deepskyblue;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #0CC;
+	padding: 20px;
+	background:beige;
+	box-shadow: inset 0px 0px 15px #0CC;
+	-moz-box-shadow: inset 0px 0px 15px #0CC;
+	-webkit-box-shadow: inset 0px 0px 15px #0CC;
+}
+.form-style-3 fieldset legend{
+	color:deepskyblue;
+	border-top: 1px solid #0CC;
+	border-left: 1px solid #0CC;
+	border-right: 1px solid #0CC;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #ffffff;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #ffffff;
+	-moz-box-shadow:-0px -1px 2px #ffffff;
+	-webkit-box-shadow:-0px -1px 2px #ffffff;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-style-3 textarea{
+	width:250px;
+	height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid black;
+	outline: none;
+	color: deepskyblue;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #f7f7f7;
+	-moz-box-shadow: inset 1px 1px 4px #ffffff;
+	-webkit-box-shadow: inset 1px 1px 4px #ffffff;
+	background: #ffffff;
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #ffffff;
+	border: 1px solid deepskyblue;
+	padding: 5px 15px 5px 15px;
+	color: deepskyblue;
+	box-shadow: inset -1px -1px 3px #ffffff;
+	-moz-box-shadow: inset -1px -1px 3px #ffffff;
+	-webkit-box-shadow: inset -1px -1px 3px #ffffff;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Pathology Lab</h1>
+    </div>
+    <div class="form-style-3">
+        <form>
+        <fieldset><legend>Personal</legend>
+        <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+        <label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
+        <label for="field4"><span>Report</span><select name="field4" class="select-field">
+        <option value="BloodReport">BloodReport</option>
+        <option value="X-Ray">X-Ray</option>
+        <option value="MRI">MRI</option>
+        <option value="CT-SCAN">CT-SCAN</option>
+        <option value="ECG">ECG</option>
+        </select></label>
+        </fieldset>
+        <fieldset><legend>Message</legend>
+        <label for="field6"><span>Message <span class="required">*</span></span><textarea name="field6" class="textarea-field"></textarea></label>
+        <label><span> </span><input type="submit" value="Submit" /></label>
+        </fieldset>
+        </form>
+        </div>
+  <div>
+</body>
+</html>
